@@ -1,0 +1,14 @@
+dist: xenial
+language: node_js
+node_js: [node]
+before_install: sysctl kernel.unprivileged_userns_clone=1
+script: node_modules/.bin/iconduit input/*
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token:
+    secure: "G7IZpY6BBYU9NL1JpCaErvlgeyhbmoN1T6e8WuvsIbtJd8JNChfkAXJ6t6lw++Q0bQOhiHhOV+1V3i5aAq+TSbVhgrId1Wx4bZoii/evA8xpV/ngrSvei2I34LtwVYjnruZeyRJzS/KfU2VUAE7hZt5QVgb5kas+KhGgrt0u0efNEeET4/2F0TlMELmAIt0EVe6fXh7pGkjcKkhWz42iSlfMiop4tuQRcrkJJGrNmOdNo4plLQfa2mcvfIhpeHyBqyLs8sPXaACHKa7mVgCccqJViC0gnL5H5KfKZbdPW19aJWDYT1eSHE442zVgq1h9DhjPIMSDwctcdY6gjxQzEOy+IrhqB8rI9xDB1dOxmZoP8K3cZjT62hqVmD8b0XrI6iJUUKPndlfPpCJO9L4ztENY9Tox9CjTA44ORGY5EriMBf29WqE5rDHxdmrvR2Vem9UNBrfOBVsVeEi+30C6L888q5vGYlqDRiRDf4t3d4KM49Q6mP82Kxwqe/CQImRUQjHcmjaYxOCOq6H5laf6F038BqmUHzwU0AhK7pKb0VLX0K+aHFozQf31NWs0BfZ+eEuU7bskSvJSdO6lbLx1L2oFYvMg8KrIxm9+BtdXNEXtBnjwnFvXkvIsfxBUQkJxca4QMph7xbpB+xHnwwC+VQNfiCTj8nT3bRb3xH1E3M8="
+  keep_history: true
+  local_dir: dist
+  on:
+    branch: master
