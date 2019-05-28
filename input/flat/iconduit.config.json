@@ -1,9 +1,14 @@
 {
+  "outputPath": "../../dist/flat",
   "name": "Iconduit (Flat)",
   "shortName": "Iconduit",
   "description": "The Iconduit brand in flat style.",
+  "url": "https://iconduit.github.io/demo/flat/",
+  "displayMode": "fullscreen",
+  "categories": [
+    "utilities"
+  ],
   "colors": {
     "brand": "#D5415C"
-  },
-  "outputPath": "../../dist/flat"
+  }
 }
