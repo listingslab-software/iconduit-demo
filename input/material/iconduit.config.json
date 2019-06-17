@@ -3,8 +3,10 @@
   "name": "Iconduit (Material)",
   "shortName": "Iconduit",
   "description": "The Iconduit brand in \"Material Design\" style.",
-  "url": "https://iconduit.github.io/demo/material/",
   "displayMode": "fullscreen",
+  "urls": {
+    "base": "https://iconduit.github.io/demo/material/"
+  },
   "categories": [
     "utilities"
   ],

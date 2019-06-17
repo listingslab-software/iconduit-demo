@@ -3,8 +3,10 @@
   "name": "Iconduit (Flat)",
   "shortName": "Iconduit",
   "description": "The Iconduit brand in flat style.",
-  "url": "https://iconduit.github.io/demo/flat/",
   "displayMode": "fullscreen",
+  "urls": {
+    "base": "https://iconduit.github.io/demo/flat/"
+  },
   "categories": [
     "utilities"
   ],
