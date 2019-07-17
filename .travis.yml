@@ -1,6 +1,7 @@
 dist: xenial
 language: node_js
 node_js: [node]
+install: yarn install
 script:
 - node_modules/.bin/iconduit input/*
 - cp README.md dist/
